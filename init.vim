@@ -56,6 +56,8 @@ nnoremap <leader>q :q!<CR>
 "file explorer
 nnoremap <leader>e :Lex<CR>
 
+"create new file 
+nnoremap <leader>nf :e %:p:h/
 
 "for source the init file
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
