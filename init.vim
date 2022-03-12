@@ -56,7 +56,6 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 
 
-
 Plug 'ThePrimeagen/harpoon'
 
 Plug 'chrisbra/csv.vim'
@@ -72,11 +71,6 @@ let mapleader = " "
 
 
 colorscheme nord
-
-
-
-set completeopt=menu,menuone,noselect
-
 
 luafile ~/.config/nvim/lsp/lsp.lua
 
