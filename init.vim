@@ -71,6 +71,7 @@ let mapleader = " "
 
 colorscheme nord
 
+lua require 'lsp.cmp'
 lua require 'lsp.lsp'
 
 
