@@ -138,9 +138,6 @@ lua <<EOF
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
   }
-  require('lspconfig')['vimls'].setup {
-    capabilities = capabilities
-  }
   require('lspconfig')['bashls'].setup {
     capabilities = capabilities
   }
@@ -148,7 +145,6 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
-
 
 
 
