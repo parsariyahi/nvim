@@ -86,6 +86,8 @@ lua <<EOF
       end,
     },
     mapping = {
+      ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'}),
+      ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'}),
       ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
       ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
@@ -144,11 +146,10 @@ lua <<EOF
   require('lspconfig')['sumneko_lua'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['vimls'].setup {
+    capabilities = capabilities
+  }
 EOF
-
-
-
-
 
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
