@@ -24,14 +24,14 @@ set expandtab               " converts tabs to white space"
 set shiftwidth=4            " width for autoindents"
 set autoindent              " indent a new line the same amount as the line just typed"
 set wildmode=longest,list   " get bash-like tab completions"
-filetype plugin indent on   "allow auto-indenting depending on file type"
+filetype plugin indent on   "allow auto-indenting depending on file type
 set mouse=a                 " enable mouse click"
 set clipboard=unnamedplus   " using system clipboard"
 set t_Co=256
 set ttyfast                 " Speed up scrolling in Vim"
-" set spell                 " enable spell check (may need to download language package)"
-" set noswapfile            " disable creating swap file"
-" set backupdir=~/.cache/vim " Directory to store backup files."
+" set spell                 " enable spell check (may need to download language package)
+" set noswapfile            " disable creating swap file
+" set backupdir=~/.cache/vim " Directory to store backup files.
 set relativenumber
 set timeoutlen=500
 
@@ -141,6 +141,12 @@ lua <<EOF
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['html'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['remark_ls'].setup {
+    capabilities = capabilities
+  }
   require('lspconfig')['bashls'].setup {
     capabilities = capabilities
   }
@@ -199,10 +205,10 @@ nnoremap <C-H> <C-W><C-H>
 
 
 " resize verticaly "
-
 nnoremap <Leader>= :vertical resize +10<CR>
 nnoremap <Leader>- :vertical resize -10<CR>
 
 
 " for vertical split "
 nnoremap <leader>sp :vsplit<CR>
+nnoremap <leader>spv :split<CR>
