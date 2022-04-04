@@ -171,6 +171,7 @@ nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
 
 "file explorer"
+let g:netrw_winsize=30
 nnoremap <leader>e :Lex<CR>
 
 "create new file "
@@ -212,3 +213,5 @@ nnoremap <Leader>- :vertical resize -10<CR>
 " for vertical split "
 nnoremap <leader>sp :vsplit<CR>
 nnoremap <leader>spv :split<CR>
+
+nnoremap <F3> :noh<CR>
