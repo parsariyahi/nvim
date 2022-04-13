@@ -156,6 +156,9 @@ lua <<EOF
   require('lspconfig')['vimls'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['cssls'].setup {
+    capabilities = capabilities
+  }
 EOF
 
 lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
