@@ -171,7 +171,7 @@ nnoremap <leader>hb :lua require("harpoon.ui").nav_prev()<CR>
 
 "for writing and quiting the file"
 nnoremap <leader>w :w!<CR>
-nnoremap <leader>q :q!<CR>
+nnoremap <leader>q :q<CR>
 
 "file explorer"
 let g:netrw_winsize=30
