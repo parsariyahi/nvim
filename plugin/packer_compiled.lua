@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/home/parsa/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/parsa/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   ["vim-python-pep8-indent"] = {
     loaded = true,
     path = "/home/parsa/.local/share/nvim/site/pack/packer/start/vim-python-pep8-indent",
