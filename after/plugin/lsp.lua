@@ -4,7 +4,7 @@ require('lspconfig').lua_ls.setup({})
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {"lua_ls", "pylsp",},
+  ensure_installed = {"lua_ls", "pyright",},
   handlers = {
     lsp.default_setup,
   },
