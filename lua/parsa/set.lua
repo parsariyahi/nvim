@@ -24,4 +24,5 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 
+-- When we set this to true, Harpoon is not working.
 -- vim.opt.autochdir = true
