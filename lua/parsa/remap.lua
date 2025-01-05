@@ -64,8 +64,8 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- Keymap for using the same clipboard as system clipboard,
 -- But the problem is we don't have any clipboard provider for linux for now,
 -- so i comment these for now.
--- vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
--- vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Delete without saving the text in buffer.
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
